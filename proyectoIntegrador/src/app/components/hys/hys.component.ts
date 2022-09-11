@@ -22,3 +22,4 @@ export class HysComponent implements OnInit {
       this.isLogged = false;
     }
   }
+}

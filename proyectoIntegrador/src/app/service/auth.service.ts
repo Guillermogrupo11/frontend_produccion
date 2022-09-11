@@ -10,8 +10,8 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
   providedIn: 'root'
 })
 export class AuthService {
-  URL = 'http://localhost:8080/auth/';
-
+  //URL = 'http://localhost:8080/auth/';
+  URL = environment.URL + 'auth/';
   constructor(private httpClient: HttpClient) { }
 
  public nuevo(nuevoUsuario: NuevoUsuario): Observable<any>{
